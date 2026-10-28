@@ -1,0 +1,31 @@
+Build a complete, responsive construction materials website called BUILDYARD MATERIALS based on my attached screenshots.
+
+TECH STACK: React + TypeScript + Vite + CSS. Use npm and standard web technologies.
+
+DESIGN: Match my screenshots with a premium navy blue (#071B31), orange (#F07824), white, and light-gray theme. Use bold condensed headings, a subtle grid background, clean rectangular cards, and green WhatsApp buttons. Make the design professional and mobile-friendly.
+
+FEATURES:
+1. Responsive header, navigation, hero section, and footer.
+2. Product catalogue with images, search, category filters, specifications, units, sample prices, and product cards.
+3. Categories: Cement, Steel/TMT Bars, Bricks/Blocks, Sand/Aggregates, Tiles, Plumbing, Electrical, Paints, Tools, and Safety Equipment.
+4. Six Why Choose Us cards.
+5. Quote form with name, phone, material, quantity, unit, delivery location, and additional requirements.
+6. Contact section with address, phone, email, business hours, Google Maps, and WhatsApp.
+7. Functional WhatsApp enquiry links with prefilled messages.
+8. Store editable sample products and business details in local TypeScript files. Clearly label demo prices and placeholder contact details.
+
+QUOTE FORM: Validate required fields and open WhatsApp with the quotation details. Do not fake database submissions or success messages.
+
+GITHUB AND VERCEL REQUIREMENTS:
+- Absolutely NO Replit-specific SDKs, database, APIs, authentication, runtime dependencies, or deployment assumptions.
+- Do not use unnecessary backend services or a custom server.
+- Use standard React + Vite.
+- Include package.json, package-lock.json, vite.config.ts, TypeScript configuration, .gitignore, README.md, and vercel.json only if needed.
+- npm run dev must start the local website.
+- npm run build must generate the production build in dist.
+- Ensure assets, imports, routing, and configuration work on Vercel's Linux environment.
+- Make the project installable with npm ci.
+- Never expose secrets or use hardcoded Replit paths.
+- Configure Vercel SPA routing correctly if React Router is used.
+
+FINAL TASK: Create all actual project files, not just examples. Run npm run build, fix all errors, and report the real test results. Include simple instructions for GitHub and Vercel deployment. The website must work independently outside Replit. Do not leave broken buttons, missing files, fake functionality, or unfinished components.

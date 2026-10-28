@@ -1,0 +1,1 @@
+- [Standalone npm lockfiles](npm-lock-isolation.md) — generate lockfiles outside the pnpm workspace graph to avoid inherited packages and advisories.

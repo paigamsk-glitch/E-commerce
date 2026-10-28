@@ -1,0 +1,13 @@
+node_modules
+dist
+.vercel
+*.local
+npm-debug.log*
+*.tsbuildinfo
+.replit-artifact/
+components.json
+src/components/
+src/hooks/
+src/lib/
+src/pages/
+tsconfig.node.json
