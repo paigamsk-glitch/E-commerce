@@ -1,5 +1,33 @@
 {
-  "installCommand": "npm ci --prefix artifacts/buildyard-materials",
-  "buildCommand": "npm run build --prefix artifacts/buildyard-materials",
-  "outputDirectory": "artifacts/buildyard-materials/dist"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "api-server": {
+      "root": "artifacts/api-server",
+      "framework": "express",
+      "entrypoint": "src/app.ts",
+      "installCommand": "pnpm install --filter @workspace/api-server... --frozen-lockfile"
+    },
+    "buildyard-materials": {
+      "root": "artifacts/buildyard-materials",
+      "framework": "vite",
+      "installCommand": "npm ci --registry=https://registry.npmjs.org",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    "mockup-sandbox": {
+      "root": "artifacts/mockup-sandbox",
+      "framework": "vite",
+      "installCommand": "pnpm install --filter @workspace/mockup-sandbox... --frozen-lockfile",
+      "buildCommand": "pnpm run build",
+      "outputDirectory": "dist"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "buildyard-materials"
+      }
+    }
+  ]
 }
