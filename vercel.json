@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm ci --prefix artifacts/buildyard-materials",
+  "buildCommand": "npm run build --prefix artifacts/buildyard-materials",
+  "outputDirectory": "artifacts/buildyard-materials/dist"
+}

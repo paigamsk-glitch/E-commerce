@@ -35,6 +35,6 @@ Replace all sample prices, contact details, and the example address/number befor
 ## Deploy on Vercel
 
 1. Import the GitHub repository into Vercel.
-2. If this app folder is the repository root, keep Vercel's project root as `.`. If you pushed the full workspace, set the project root to `artifacts/buildyard-materials`.
-3. Keep the detected Vite settings, or set build command to `npm run build` and output directory to `dist`.
-4. Deploy. No server, API, environment variables, or rewrite configuration is required.
+2. If you pushed the full workspace, keep the project root at `.`. The root `vercel.json` installs this app with its npm lockfile, builds it, and serves `artifacts/buildyard-materials/dist` without installing the other workspace packages.
+3. If you made the app folder its own GitHub repository, keep the project root at `.` and use Vercel's detected Vite settings, or set build command to `npm run build` and output directory to `dist`.
+4. Deploy. No server, API, environment variables, or SPA rewrite configuration is required.
