@@ -24,6 +24,12 @@
   },
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "api-server"
+      }
+    },
+    {
       "source": "/(.*)",
       "destination": {
         "service": "buildyard-materials"
